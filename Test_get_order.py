@@ -1,7 +1,6 @@
 import sender_stand_request
 import data
 import configuration
-
 def get_oder_body(): #Получаем тело запроса для создания заказа
     order_body = data.order_body.copy()
     return order_body

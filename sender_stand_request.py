@@ -1,8 +1,6 @@
 import data
 import requests
 import configuration
-
-
 def order_create(body): #Создание заказа
    return requests.post(configuration.URL_SERVICE + configuration.CREATE_ORDER_PATH,
                         json=body,
