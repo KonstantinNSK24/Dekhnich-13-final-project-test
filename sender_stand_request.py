@@ -8,12 +8,12 @@ def order_create(body): #Создание заказа
                         json=body,
                         headers=data.headers)
 
+
 def get_order_on_track(track): #Получение заказа по трек номеру
    return requests.get(configuration.URL_SERVICE + configuration.GET_ORDER_PATH,
                        params={
                            't': track,
                        })
-
 
 
 
